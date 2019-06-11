@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+   }
+  
+  .header{
+    background-color: #ccc;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    
+  }
+  .cartlogo{
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    transform: scale(1.6,1.6);
+  }
+  .header ul{
+    padding-left: 0;
+    margin: 0;
+    
+  }
+  
+  .header ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 30px;
+    
+  }
+  .header ul li:hover,.active{
+   background-color: black;
+    color: white;
+  }
+  
+  .header a{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-family: 'Monoton', cursive;
+    line-height: 60px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .navigation{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    box-shadow: 0 0 2px #ccc;
+    z-index: 4;
+  }
+  
+  .navigation ul{
+    padding-left: 0;
+    margin: 0;
+  }
+  .navigation ul li{
+    list-style: none;
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 10px;
+    padding-left: 1;
+    font-size: 13px;
+    line-height: 25px;
+  }
+  .navigation ul li:hover, .navactive {
+    color: orange;
+  }
+  .searchbar{
+    position: absolute;
+    top:10px;
+    right: 10px;
+  }
+  .input{
+    border-radius: 2px;
+    height: 25px;
+  }
+  button{
+    border-radius: 2px;
+    height: 25px;
+  }
+  .off{
+    animation:blinkingText 0.8s infinite;
+    background: yellow;
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    line-height: 5px;
+  }
+  @keyframes blinkingText{
+      0%{     color: #000;    }
+      49%{    color: blue; }
+      50%{    color: transparent; }
+      99%{    color:transparent;  }
+      100%{   color: #000;    }
+  }
+  .sidebar{
+    position: fixed;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    height: 500px;
+    width: 200px;
+    box-shadow: 0 0 3px #cccc;
+    overflow: auto;
+  }
+  .filter ul li{
+    list-style: none;
+    padding: 5px; 
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #867979;
+  }
+  .filter ul {
+    padding-left: 0;
+  }
+  .filter h4{
+    font-weight: normal;
+    margin: 10px 0;
+  }
+  
+  .sortBy{
+    position: absolute;
+    top: 120px;
+    right: 20px;
+  }
+  .productinfo{
+    position: relative;
+     top: 200px;
+     left: 250px;
+     overflow: auto;
+    
+  }
+  .product{
+    margin: 10px;
+    width: 200px;;
+    height: 250px;
+    background-color: black;
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+  
+  .container ul{
+    padding-left: 250px;
+    padding-top: 150px;
+    list-style: none;
+    z-index: 2;
+    
+  }
+  .container ul li{
+    height: 300px;
+    width: 20%;
+    background-color: #eee;
+    display: inline-block;
+    margin: 10px;
+    overflow: auto;
+  }
+  .productimg{
+    height: 80%;
+    width: 100%;
+  }
+  .prodname{
+      font-family: 'Raleway', sans-serif;
+      font-size: 15px;
+      color: black;
+  }
+  .price{
+    color: red;
+    font-size: 15px;
+  }
+  .updateprice{
+    color: black;
+    font-size: 13px;
+  }
+  
+  .container ul li:hover{
+    box-shadow: 0 0 5px;
+  }
+  .heart{
+    float: right;
+     transform: scale(1.0,1.0);
+  }
+  .heart:hover{
+    color: red;
+  }
+  .offlogo{
+    background: black;
+    color: white;
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 12px;
+    padding: 5px;
+  }
+  
+  
